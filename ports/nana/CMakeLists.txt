@@ -26,7 +26,7 @@ target_include_directories(nana PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 
-target_compile_features(nana PUBLIC cxx_std_14)
+target_compile_features(nana PUBLIC cxx_std_17)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   target_link_libraries(nana PUBLIC c++experimental)
